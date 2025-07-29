@@ -30,6 +30,22 @@
 #include <iostream>
 #include <vector>
 
+// Same thing, different day :)
+template<typename T>
+void printPartitionedView(const std::vector<T>& data) {
+    for (size_t i = 0; i < data.size(); ++i) {
+        for (size_t j = i - 1; j != static_cast<size_t>(-1); --j) {
+            std::cout << data[i - j - 1] << ",";
+        }
+
+        std::cout << "[" << data[i] << "]";
+
+        for (size_t k = i + 1; k < data.size(); ++k) {
+            std::cout << "," << data[k];
+        }
+        std::cout << "\n";
+    }
+}
 
 void pivot_visualize(const std::vector<int>& a, const std::string& label = "Pivot View") {
     std::cout << "--- " << label << " ---\n";
