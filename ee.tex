@@ -1,0 +1,82 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb, geometry}
+\geometry{margin=1in}
+
+\title{\textbf{Partial Fractions \& Trigonometric Identities Cheat Sheet}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{1. Partial Fraction Types}
+
+\begin{itemize}
+  \item \textbf{Distinct Linear Factors:}
+  \[
+    \frac{P(x)}{(x - a)(x - b)(x - c)} = \frac{A}{x - a} + \frac{B}{x - b} + \frac{C}{x - c}
+  \]
+
+  \item \textbf{Repeated Linear Factors:}
+  \[
+    \frac{P(x)}{(x - a)^n} = \frac{A_1}{x - a} + \frac{A_2}{(x - a)^2} + \cdots + \frac{A_n}{(x - a)^n}
+  \]
+
+  \item \textbf{Irreducible Quadratic Factor:}
+  \[
+    \frac{P(x)}{x^2 + bx + c} = \frac{Ax + B}{x^2 + bx + c}
+  \]
+
+  \item \textbf{Repeated Irreducible Quadratic:}
+  \[
+    \frac{P(x)}{(x^2 + bx + c)^n} = \frac{A_1x + B_1}{x^2 + bx + c} + \cdots + \frac{A_nx + B_n}{(x^2 + bx + c)^n}
+  \]
+\end{itemize}
+
+\section*{2. Trigonometric Identities}
+
+\subsection*{Double Angle}
+\[
+\begin{aligned}
+\sin(2\theta) &= 2\sin\theta\cos\theta \\
+\cos(2\theta) &= \cos^2\theta - \sin^2\theta = 2\cos^2\theta - 1 = 1 - 2\sin^2\theta \\
+\tan(2\theta) &= \frac{2\tan\theta}{1 - \tan^2\theta}
+\end{aligned}
+\]
+
+\subsection*{Half Angle}
+\[
+\begin{aligned}
+\sin^2\theta &= \frac{1 - \cos(2\theta)}{2} \\
+\cos^2\theta &= \frac{1 + \cos(2\theta)}{2} \\
+\tan^2\theta &= \frac{1 - \cos(2\theta)}{1 + \cos(2\theta)}
+\end{aligned}
+\]
+
+\subsection*{Sum and Difference}
+\[
+\begin{aligned}
+\sin(a \pm b) &= \sin a \cos b \pm \cos a \sin b \\
+\cos(a \pm b) &= \cos a \cos b \mp \sin a \sin b \\
+\tan(a \pm b) &= \frac{\tan a \pm \tan b}{1 \mp \tan a \tan b}
+\end{aligned}
+\]
+
+\subsection*{Product to Sum}
+\[
+\begin{aligned}
+\sin a \sin b &= \frac{1}{2}[\cos(a - b) - \cos(a + b)] \\
+\cos a \cos b &= \frac{1}{2}[\cos(a - b) + \cos(a + b)] \\
+\sin a \cos b &= \frac{1}{2}[\sin(a + b) + \sin(a - b)]
+\end{aligned}
+\]
+
+\subsection*{Sum to Product}
+\[
+\begin{aligned}
+\sin a \pm \sin b &= 2 \sin\left(\frac{a \pm b}{2}\right) \cos\left(\frac{a \mp b}{2}\right) \\
+\cos a + \cos b &= 2 \cos\left(\frac{a + b}{2}\right) \cos\left(\frac{a - b}{2}\right) \\
+\cos a - \cos b &= -2 \sin\left(\frac{a + b}{2}\right) \sin\left(\frac{a - b}{2}\right)
+\end{aligned}
+\]
+
+\end{document}
