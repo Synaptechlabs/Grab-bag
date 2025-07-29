@@ -8,7 +8,7 @@ This repo contains:
 
 - 🔁 Permutation experiments (recursion, backtracking, and output patterning)
 - 🔍 Sorting algorithm implementations (selection sort, insertion sort, etc.)
-- 🧠 Logic experiments in loop design and output formatting
+- 🧠 Weird experiments in well anything...
 - 💡 Small utilities or classic-style functions for exploration
 - 🧓 Retro coding flavor — a nod to Pascal, Fortran, and old-school CS
 
